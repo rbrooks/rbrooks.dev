@@ -9,11 +9,11 @@ const Section = (props: { title: string; skills: string[] }) => (
   </>
 );
 
-const Skills = (data: { translation: Translation["skills"] }) => (
+const Skills = (props: { translation: Translation["skills"] }) => (
   <>
-    <h3>{data.translation.title}</h3>
+    <h3>{props.translation.title}</h3>
     <div class="space-y-3">
-      {data.translation.sections.map((section) => <Section {...section} />)}
+      {props.translation.sections.map((section) => <Section {...section} />)}
     </div>
   </>
 );
