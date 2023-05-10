@@ -1,0 +1,164 @@
+{
+  "me": {
+    "text": "Born on 7.15.1970 next door to Vernon Valley / Great Gorge ski resort, to a Ski-Instructor, Systems-Analyst father. Currently working at Trainual.com."
+  },
+  "education": {
+    "title": "Education",
+    "milestones": [
+      {
+        "title": "Self Taught",
+        "date": "Since 1977",
+        "text": "BASIC on TRS-80 & CP/M machines (NorthStar Dimension and Advantage), Fortran, TurboPascal on MS-DOS PCs, on thru modern languages and F/OSS."
+      },
+      {
+        "title": "Bronze Medal: New Jersey Institue of Technology (NJIT) Computer Olympics",
+        "date": "1988: Sr Year in HS",
+        "text": "Turbo Pascal: Atomic Mass Converter"
+      },
+      {
+        "title": "Silver Medal: Stockton State College Science Fair",
+        "date": "1987: Jr Year in HS",
+        "text": "Turbo Pascal: Newer Version of my Atomic Mass Converter"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "name": "Trainual.com",
+        "role": "Full Stack Web Developer",
+        "date": "Dec 2020 - May 2023, Scottsdale, AZ",
+        "tasks": [
+          "Sr. Dev: Wrote a number of new features from the main application.",
+          "Data Science Engineer: Rolled out dbt.",
+          "Data Science Engineer: Built all of the analytics infrastructure."
+        ]
+      },
+      {
+        "name": "ShopRunner.com",
+        "role": "Full Stack Web Developer",
+        "date": "Dec 2017 - April 2020, Conshohoken, PA",
+        "tasks": [
+          "Added features to the main application and Kotlin microservices.",
+          "Wrote AWS Lambda: Python on Flask."
+        ]
+      },
+      {
+        "name": "RevZilla",
+        "role": "Director of Software Engineering",
+        "date": "2016 - 2017, Philadelphia, PA",
+        "tasks": [
+          "100,000,000 in revenure the year I was there."
+        ]
+      },
+      {
+        "name": "TelVue",
+        "role": "Sr Engineer, Web Devlopment Mgr, Director of Software Engineering",
+        "date": "2007 - 2016, Mt. Laurel, NJ",
+        "tasks": [
+          "Added lots of features to their Suite of Rails-based products.",
+          "Recruiting: Assembled and trained the Dev Team.",
+          "Created TelVue Connect, their flagship SAAS product - TelVue's first modern stack."
+        ]
+      },
+      {
+        "name": "NetReach",
+        "role": "Web Design Mgr, Project Mgr, Sr Engineer",
+        "date": "1999 - 2005, Ambler, PA",
+        "tasks": [
+          "Consulting, Coding, Management",
+          "Hired 5-person Design Dept",
+          "Managed, engineered, or designed ~30 projects, including the Philadelphia Eagles"
+        ]
+      },
+      {
+        "name": "Atlantic Image: Network Engineering & Office Solutions (NEOS) Corp.",
+        "role": "President / Founder / Web Designer-Developer",
+        "date": "1993 - 1998, Wildwood, NJ",
+        "tasks": [
+          "Built a customer base of 70 clients, mostly oceanfront hotels and restaurants.",
+          "Built the first website Cape May County had ever seen."
+        ]
+      },
+      {
+        "name": "Aqua Beach Resort: The mosts popular hotel in Wildwood. 100% occupancy.",
+        "role": "Director Front-Desk Operations, Controller, Sys Admin, Wwb Designer",
+        "date": "1992 - 1998, Wildwood, NJ",
+        "tasks": [
+          "Assembled and trained team of 10 Desk Clerks and 2 Night Auditors. My direct reports.",
+          "All the bookkeeping.",
+          "Systems Administration: Roled out their first network, etc.",
+          "Automated the entire place. Replaced legacy tech with a PMS, etc.",
+          "Fixed a number process and service problems, cutting significant costs.."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "sections": [
+      {
+        "title": "Programming Languages",
+        "skills": [
+          "Ruby",
+          "ES6",
+          "TypeScript",
+          "Python",
+          "VBS",
+          "SQL",
+          "C#",
+          "Learning Rust and Go"
+        ]
+      },
+      {
+        "title": "Libraries and Frameworks",
+        "skills": [
+          "Rails",
+          "Sinatra",
+          "Deno",
+          "Fresh: This site is TypeScript on Deno on Fresh",
+          "Flask",
+          "Preact",
+          "React",
+          "Node.js",
+          "Express",
+          "Nest"
+        ]
+      },
+      {
+        "title": "Further Knowledge",
+        "skills": [
+          "Linux: Ubuntu, CentOS",
+          "Docker",
+          "Kubernetes",
+          "GCP & AWS",
+          "Serverless: AWS Lambdas & GCP Cloud Functions",
+          "Segment.io",
+          "CI/CD: Semaphore, Tavis CI, Jenkins",
+          "DataDog / NewRelic",
+          "NewRelic",
+          "Git",
+          "HTML/SCSS/SASS",
+          "NoSQL: Redis",
+          "Background Job Servers: Resque, Siekiq"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "mail": "E-Mail",
+    "message": "Message",
+    "send": "Send",
+    "sent": "Thanks for the message!",
+    "failed": "Something went wrong :("
+  },
+  "footer": {
+    "about": "About Me",
+    "privacy": "Privcey Policy"
+  }
+}
