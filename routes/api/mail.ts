@@ -15,6 +15,7 @@ export const handler: Handlers = {
         },
       },
     });
+
     const payload: { mail: string; message: string } | undefined = await request
       .json();
     if (payload) {
@@ -22,10 +23,11 @@ export const handler: Handlers = {
         await client.send({
           from: Deno.env.get("from")!,
           to: Deno.env.get("to")!,
-          subject: `Neue Nachricht von ${payload.mail}`,
+          subject: `Message from russbrooks.com: ${payload.mail}`,
           content: payload.message,
         });
         await client.close();
+
         return new Response("", { status: Status.OK });
       } catch (e) {
         return new Response("", { status: Status.BadRequest });

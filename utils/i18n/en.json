@@ -8,7 +8,7 @@
       {
         "title": "Self Taught",
         "date": "Since 1977",
-        "text": "BASIC on TRS-80 & CP/M machines (NorthStar Dimension and Advantage), Fortran, TurboPascal on MS-DOS PCs, on thru modern languages and F/OSS."
+        "text": "BASIC on TRS-80 & CP/M machines (NorthStar), Fortran & TurboPascal on MS-DOS PCs, on thru modern languages and F/OSS."
       },
       {
         "title": "Bronze Medal: New Jersey Institue of Technology (NJIT) Computer Olympics",
@@ -49,7 +49,7 @@
         "role": "Director of Software Engineering",
         "date": "2016 - 2017, Philadelphia, PA",
         "tasks": [
-          "100,000,000 in revenure the year I was there."
+          "$100,000,000 in revenue the year I was there."
         ]
       },
       {
@@ -73,7 +73,7 @@
         ]
       },
       {
-        "name": "Atlantic Image: Network Engineering & Office Solutions (NEOS) Corp.",
+        "name": "Network Engineering & Office Solutions (NEOS) corp (dba Atlantic Image).",
         "role": "President / Founder / Web Designer-Developer",
         "date": "1993 - 1998, Wildwood, NJ",
         "tasks": [
@@ -82,15 +82,16 @@
         ]
       },
       {
-        "name": "Aqua Beach Resort: The mosts popular hotel in Wildwood.",
+        "name": "Aqua Beach Resort: Most-popular hotel in Wildwood.",
         "role": "Director Front-Desk Operations, Controller, Sys Admin, Wwb Designer",
-        "date": "1992 - 1998, Wildwood, NJ",
+        "date": "1992 - 1998, Wildwood, NJ. 22 yeasrs old.",
         "tasks": [
-          "Assembled and trained team of 10 Desk Clerks and 2 Night Auditors. My direct reports.",
+          "Promoted to Night Auditor in 1 mo. Promoted to Front Desk Mgr 1 mo later.",
+          "Assembled and trained team of 10 Desk Clerks and 2 Night Auditors annually. My direct reports.",
           "All the bookkeeping.",
-          "Systems Administration: Roled out their first network, etc.",
-          "Automated the entire place. Replaced legacy tech with a PMS, etc.",
-          "Fixed a number process and service problems, cutting significant costs.."
+          "Systems Administrator: Rolled out their first network (Win NT), website, etc.",
+          "Automation:. Replaced legacy manual processes with technology. Trrained dept in its ues.",
+          "Fixed a number process and service problems, cutting costs and raising guest sat."
         ]
       }
     ]
@@ -130,6 +131,7 @@
         "title": "Further Knowledge",
         "skills": [
           "Linux: Ubuntu, CentOS",
+          "dbt",
           "Docker",
           "Kubernetes",
           "GCP & AWS",
@@ -154,8 +156,8 @@
     "mail": "E-Mail",
     "message": "Message",
     "send": "Send",
-    "sent": "Thanks for the message!",
-    "failed": "Something went wrong :("
+    "sent": "Message sent. Thank you! 📧",
+    "failed": "Something went wrong! 😱 Maybe email Russ."
   },
   "footer": {
     "about": "About Me",
