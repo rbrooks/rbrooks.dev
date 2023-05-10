@@ -1,6 +1,6 @@
 import { MiddlewareHandlerContext } from "$fresh/server.ts";
 
-import de from "../utils/i18n/de.json" assert { type: "json" };
+import es from "../utils/i18n/es.json" assert { type: "json" };
 import en from "../utils/i18n/en.json" assert { type: "json" };
 
 import SecurityHeaders from "../utils/securityHeaders.ts";
@@ -13,8 +13,8 @@ export const handler = [
   ) {
     const cookie = req.headers.get("cookie");
     if (cookie && cookie.includes("lang")) {
-      ctx.state.lang = cookie.split("=")[1] as "en" | "de";
-      ctx.state.translation = ctx.state.lang === "en" ? en : de;
+      ctx.state.lang = cookie.split("=")[1] as "en" | "es";
+      ctx.state.translation = ctx.state.lang === "en" ? en : es;
       return await ctx.next();
     } else {
       ctx.state.lang = req.headers.get("accept-language")?.includes("de")

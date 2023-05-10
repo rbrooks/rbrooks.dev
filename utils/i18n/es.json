@@ -1,0 +1,66 @@
+{
+  "me": {
+    "text": "Eventually a foreign language verison using i18n"
+  },
+  "education": {
+    "title": "Education",
+    "milestones": [
+      {
+        "title": "Lorem",
+        "date": "Ipsum",
+        "text": "Hasta La Pasta"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "name": "Foo",
+        "role": "Dir",
+        "date": "2016",
+        "tasks": [
+          "Lorem Ipsum"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "sections": [
+      {
+        "title": "Programming Languages",
+        "skills": [
+          "Rust"
+        ]
+      },
+      {
+        "title": "Libraries and Frameworks",
+        "skills": [
+          "Rails"
+        ]
+      },
+      {
+        "title": "Further Knowledge",
+        "skills": [
+          "Linux"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "mail": "E-Mail",
+    "message": "Message",
+    "send": "Send",
+    "sent": "Message sent. Thank you! 📧",
+    "failed": "Something went wrong! 😱 Maybe email Russ."
+  },
+  "footer": {
+    "about": "About Me",
+    "privacy": "Privicey Policy"
+  }
+}
