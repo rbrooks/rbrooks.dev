@@ -1,6 +1,5 @@
 import { MiddlewareHandlerContext } from "$fresh/server.ts";
 
-import de from "../utils/i18n/de.json" assert { type: "json" };
 import en from "../utils/i18n/en.json" assert { type: "json" };
 
 import SecurityHeaders from "../utils/securityHeaders.ts";
