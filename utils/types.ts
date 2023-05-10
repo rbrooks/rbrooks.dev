@@ -4,7 +4,7 @@ type Translation = typeof translation;
 
 type State = {
   translation: Translation;
-  lang: "en" | "de";
+  lang: "en" | "es";
   dark: boolean;
 };
 

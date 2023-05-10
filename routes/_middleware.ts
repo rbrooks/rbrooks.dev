@@ -17,10 +17,10 @@ export const handler = [
       ctx.state.translation = ctx.state.lang === "en" ? en : es;
       return await ctx.next();
     } else {
-      ctx.state.lang = req.headers.get("accept-language")?.includes("de")
-        ? "de"
+      ctx.state.lang = req.headers.get("accept-language")?.includes("es")
+        ? "es"
         : "en";
-      ctx.state.translation = ctx.state.lang === "en" ? en : de;
+      ctx.state.translation = ctx.state.lang === "en" ? en : es;
       const res = await ctx.next();
       res.headers.set("Set-Cookie", `lang=${ctx.state.lang}`);
       return res;
