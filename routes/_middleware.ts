@@ -22,7 +22,7 @@ export const handler = [
         : "en";
       ctx.state.translation = ctx.state.lang === "en" ? en : es;
       const res = await ctx.next();
-      res.headers.set("Set-Cookie", `lang=${ctx.state.lang}`);
+      res.headers.set("Set-Cookie", `lang=en`);
       return res;
     }
   },

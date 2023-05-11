@@ -18,7 +18,7 @@
       {
         "title": "Silver Medal: Stockton State College Science Fair",
         "date": "1987: Jr Year in HS",
-        "text": "Turbo Pascal: Newer Version of my Atomic Mass Converter"
+        "text": "Turbo Pascal: Atomic Mass Converter"
       }
     ]
   },
@@ -84,8 +84,9 @@
       {
         "name": "Aqua Beach Resort: Most-popular hotel in Wildwood.",
         "role": "Director Front-Desk Operations, Controller, Sys Admin, Wwb Designer",
-        "date": "1992 - 1998, Wildwood, NJ. 22 yeasrs old.",
+        "date": "1992 - 1998, Wildwood, NJ.",
         "tasks": [
+          "22 yeasrs old.",
           "Promoted to Night Auditor in 1 mo. Promoted to Front Desk Mgr 1 mo later.",
           "Assembled and trained team of 10 Desk Clerks and 2 Night Auditors annually. My direct reports.",
           "All the bookkeeping.",
