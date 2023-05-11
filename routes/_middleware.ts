@@ -13,14 +13,17 @@ export const handler = [
   ) {
     const cookie = req.headers.get("cookie");
     if (cookie && cookie.includes("lang")) {
-      ctx.state.lang = cookie.split("=")[1] as "en" | "es";
-      ctx.state.translation = ctx.state.lang === "en" ? en : es;
+      // ctx.state.lang = cookie.split("=")[1] as "en" | "es";
+      ctx.state.lang = "en";
+      ctx.state.translation = en;
       return await ctx.next();
     } else {
-      ctx.state.lang = req.headers.get("accept-language")?.includes("es")
-        ? "es"
-        : "en";
-      ctx.state.translation = ctx.state.lang === "en" ? en : es;
+      // ctx.state.lang = req.headers.get("accept-language")?.includes("es")
+      //   ? "es"
+      //   : "en";
+      ctx.state.lang = "en";
+      ctx.state.translation = en;
+      // ctx.state.translation = ctx.state.lang === "en" ? en : es;
       const res = await ctx.next();
       res.headers.set("Set-Cookie", `lang=en`);
       return res;
