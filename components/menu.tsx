@@ -13,7 +13,8 @@ const Menu = (data: { lang: State["lang"] }) => (
         src="/vectors/cv.svg"
         class="
           w-full h-full transition-colors duration-150"
-        alt="CV"
+        alt="PDF"
+        title="PDF version"
       />
     </a>
   </div>
