@@ -22,12 +22,12 @@ export const handler: Handlers = {
 
     const client = new SMTPClient({
       connection: {
-        hostname: SMTP_HOST!,
-        port: +SMTP_PORT!,
+        hostname: "smtp.gmail.com",
+        port: 587,
         tls: true,
         auth: {
-          username: SMTP_UN!,
-          password: await generate(SMTP_PW!),
+          username: "cbr1000@gmail.com",
+          password: "nhugedtzkvmrfcqr",
         },
       },
     });
@@ -37,8 +37,8 @@ export const handler: Handlers = {
     if (payload) {
       try {
         await client.send({
-          from: SMTP_FROM!,
-          to: SMTP_TO!,
+          from: "cbr1000@gmail.com",
+          to: "me@russbrooks.com",
           subject: `${payload.mail} sent a message from russbrooks.com`,
           content: payload.message,
         });
