@@ -1,6 +1,5 @@
 import { Handlers, Status } from "$fresh/server.ts";
 import { SmtpClient } from "smtp";
-import { generate } from "../../utils/generate.ts";
 
 export const handler: Handlers = {
   async POST(request: Request) {
@@ -9,7 +8,7 @@ export const handler: Handlers = {
     const connectConfig: any = {
       hostname: Deno.env.get("SMTP_HOST")!,
       // port: +Deno.env.get("SMTP_PORT")!,
-      tls: true,
+      // tls: true,
       username: Deno.env.get("SMTP_UN")!,
       password: Deno.env.get("SMTP_PW")!,
     };
@@ -23,7 +22,7 @@ export const handler: Handlers = {
         await client.send({
           from: payload.mail,
           to: "me@russbrooks.com",
-          subject: "Message From RussBrooks.com Contact Form",
+          subject: `RussBrooks.com inquery from ${payload.mail}`,
           content: payload.message,
         });
         await client.close();
