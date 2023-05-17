@@ -23,7 +23,7 @@ const Index = (
   { data }: PageProps<State>,
 ) => {
   return (
-    <div class="grid grid-cols-desktop gap-x-5 lg:grid-cols-1  gap-y-10 lg:gap-y-0">
+    <div class="grid grid-cols-desktop gap-x-5 lg:grid-cols-1 gap-y-10 lg:gap-y-0">
       <Menu lang={data.lang} />
       <Me translation={data.translation.me} />
       <Education translation={data.translation.education} />

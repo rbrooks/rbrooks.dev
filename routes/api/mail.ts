@@ -6,12 +6,12 @@ export const handler: Handlers = {
   async POST(request: Request) {
     const client = new SMTPClient({
       connection: {
-        hostname: Deno.env.get("hostname")!,
-        port: +Deno.env.get("port")!,
+        hostname: Deno.env.get("SMTP_HOST")!,
+        port: +Deno.env.get("SMTP_PORT")!,
         tls: true,
         auth: {
-          username: Deno.env.get("username")!,
-          password: await generate(Deno.env.get("password")!),
+          username: Deno.env.get("SMTP_UN")!,
+          password: await generate(Deno.env.get("SMTP_PW")!),
         },
       },
     });
@@ -21,9 +21,9 @@ export const handler: Handlers = {
     if (payload) {
       try {
         await client.send({
-          from: Deno.env.get("from")!,
-          to: Deno.env.get("to")!,
-          subject: `Message from russbrooks.com: ${payload.mail}`,
+          from: Deno.env.get("SMTP_FROM")!,
+          to: Deno.env.get("SMTP_TO")!,
+          subject: `From russbrooks.com: ${payload.mail}`,
           content: payload.message,
         });
         await client.close();
