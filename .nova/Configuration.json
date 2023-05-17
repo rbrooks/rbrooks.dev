@@ -1,0 +1,4 @@
+{
+  "apexskier.typescript.config.userPreferences.importModuleSpecifierEnding" : "auto",
+  "apexskier.typescript.config.userPreferences.importModuleSpecifierPreference" : "shortest"
+}

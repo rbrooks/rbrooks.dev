@@ -11,7 +11,7 @@ export const handler: Handlers = {
         tls: true,
         auth: {
           username: Deno.env.get("SMTP_UN")!,
-          password: Deno.env.get("SMTP_PW")!,
+          password: await generate(Deno.env.get("SMTP_PW")!),
         },
       },
     });
