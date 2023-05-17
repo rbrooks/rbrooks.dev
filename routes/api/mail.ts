@@ -4,6 +4,15 @@ import { generate } from "../../utils/generate.ts";
 
 export const handler: Handlers = {
   async POST(request: Request) {
+    const { SMTP_HOST, SMTP_PORT, SMTP_UN, SMTP_PW, SMTP_FROM, SMTP_TO } = Deno
+      .env.toObject();
+    console.log("*** SMTP_HOST: " + SMTP_HOST);
+    console.log("*** SMTP_PORT: " + SMTP_PORT);
+    console.log("*** SMTP_UN: " + SMTP_UN);
+    console.log("*** SMTP_PW: " + SMTP_PW);
+    console.log("*** SMTP_FROM: " + SMTP_FROM);
+    console.log("*** SMTP_TO: " + SMTP_TO);
+
     console.log("*** SMTP_HOST: " + Deno.env.get("SMTP_HOST"));
     console.log("*** SMTP_PORT: " + Deno.env.get("SMTP_PORT"));
     console.log("*** SMTP_UN: " + Deno.env.get("SMTP_UN"));
@@ -13,12 +22,12 @@ export const handler: Handlers = {
 
     const client = new SMTPClient({
       connection: {
-        hostname: Deno.env.get("SMTP_HOST")!,
-        port: +Deno.env.get("SMTP_PORT")!,
+        hostname: SMTP_HOST!,
+        port: +SMTP_PORT!,
         tls: true,
         auth: {
-          username: Deno.env.get("SMTP_UN")!,
-          password: await generate(Deno.env.get("SMTP_PW")!),
+          username: SMTP_UN!,
+          password: await generate(SMTP_PW!),
         },
       },
     });
@@ -28,9 +37,9 @@ export const handler: Handlers = {
     if (payload) {
       try {
         await client.send({
-          from: Deno.env.get("SMTP_FROM")!,
-          to: Deno.env.get("SMTP_TO")!,
-          subject: `*** ${payload.mail} sent message from russbrooks.com`,
+          from: SMTP_FROM!,
+          to: SMTP_TO!,
+          subject: `${payload.mail} sent a message from russbrooks.com`,
           content: payload.message,
         });
         await client.close();
