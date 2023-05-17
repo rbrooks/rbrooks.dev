@@ -4,11 +4,12 @@ import { generate } from "../../utils/generate.ts";
 
 export const handler: Handlers = {
   async POST(request: Request) {
-    console.log("*** " + Deno.env.get("SMTP_HOST"));
-    console.log("*** " + Deno.env.get("SMTP_PORT"));
-    console.log("*** " + Deno.env.get("SMTP_PW"));
-    console.log("*** " + Deno.env.get("SMTP_FROM"));
-    console.log("*** " + Deno.env.get("SMTP_TO"));
+    console.log("*** SMTP_HOST: " + Deno.env.get("SMTP_HOST"));
+    console.log("*** SMTP_PORT: " + Deno.env.get("SMTP_PORT"));
+    console.log("*** SMTP_UN: " + Deno.env.get("SMTP_UN"));
+    console.log("*** SMTP_PW: " + Deno.env.get("SMTP_PW"));
+    console.log("*** SMTP_FROM: " + Deno.env.get("SMTP_FROM"));
+    console.log("*** SMTP_TO: " + Deno.env.get("SMTP_TO"));
 
     const client = new SMTPClient({
       connection: {
