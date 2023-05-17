@@ -11,7 +11,7 @@ export const handler: Handlers = {
         tls: true,
         auth: {
           username: Deno.env.get("SMTP_UN")!,
-          password: await generate(Deno.env.get("SMTP_PW")!),
+          password: Deno.env.get("SMTP_PW")!,
         },
       },
     });
@@ -23,7 +23,7 @@ export const handler: Handlers = {
         await client.send({
           from: Deno.env.get("SMTP_FROM")!,
           to: Deno.env.get("SMTP_TO")!,
-          subject: `From russbrooks.com: ${payload.mail}`,
+          subject: `*** ${payload.mail} sent message from russbrooks.com`,
           content: payload.message,
         });
         await client.close();
