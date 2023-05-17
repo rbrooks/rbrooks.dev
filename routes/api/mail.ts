@@ -10,8 +10,8 @@ export const handler: Handlers = {
 
     const connectConfig: any = {
       hostname: Deno.env.get("SMTP_HOST")!,
-      port: +Deno.env.get("SMTP_PORT")!,
-      tls: true,
+      // port: +Deno.env.get("SMTP_PORT")!,
+      // tls: true,
       username: Deno.env.get("SMTP_UN")!,
       password: Deno.env.get("SMTP_PW")!,
     };
@@ -34,9 +34,9 @@ export const handler: Handlers = {
     if (payload) {
       // try {
       await client.send({
-        from: "cbr1000@gmail.com",
+        from: payload.mail,
         to: "me@russbrooks.com",
-        subject: "Foo",
+        subject: "Message from RussBrooks.com",
         content: payload.message,
       });
     }
