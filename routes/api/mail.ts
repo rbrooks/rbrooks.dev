@@ -7,8 +7,7 @@ export const handler: Handlers = {
 
     const connectConfig: any = {
       hostname: Deno.env.get("SMTP_HOST")!,
-      // port: +Deno.env.get("SMTP_PORT")!,
-      // tls: true,
+      port: +Deno.env.get("SMTP_PORT")!,
       username: Deno.env.get("SMTP_UN")!,
       password: Deno.env.get("SMTP_PW")!,
     };
