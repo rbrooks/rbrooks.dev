@@ -1,9 +1,10 @@
+import Menu from "../components/menu.tsx";
+import ColophonContent from "../components/colophon.tsx";
+
 const Colophon = () => (
-  <div class="space-y-2">
-    <h1>Colophon</h1>
-    <h2>TypeScript on Deno on Fresh</h2>
-    <p>
-    </p>
+  <div class="grid grid-cols-desktop gap-x-5 lg:grid-cols-1 gap-y-10 lg:gap-y-0">
+    <Menu lang="en" page="colophon" />
+    <ColophonContent translation="en" />
   </div>
 );
 export default Colophon;

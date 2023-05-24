@@ -26,10 +26,13 @@ export default {
     extend: {
       colors: {
         gray: {
-          DEFAULT: "#111111",
-          light: "#888888",
-          dark: "#222222",
+          DEFAULT: "#111",
+          light: "#999",
+          dark: "#222",
         },
+        links: "#81a2be",
+        linksVis: "#b294bb",
+        linksHov: "#cc6666",
       },
       gridTemplateColumns: {
         desktop: "min-content auto",

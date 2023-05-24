@@ -76,56 +76,56 @@ const Projects = (data: { translation: Translation["projects"] }) => (
       <Project
         link="https://www.netreach.com"
         domain="NetReach: (defunct ISP & Consulting)"
-        technologies="MS ASP 2.0 (VBS), SQL Server, MicroSoft Windows Server"
+        technologies="MS ASP 3.0 (VBS), SQL Server, MS Windows Server"
         from="#195a9b"
         to="#262626"
       />
       <Project
         link="https://wildwoodsnj.com/"
         domain="Wildwood Tourism Hub"
-        technologies="HTML, CSS, my Design created in PhotoShop"
+        technologies="HTML, CSS, PhotoShop"
         from="#36c6d2"
         to="#f9cd0c"
       />
       <Project
         link="https://www.aquabeach.com"
         domain="Aqua Beach Resort"
-        technologies="HTML, CSS, my Design created in PhotoShop"
+        technologies="HTML, CSS, PhotoShop"
         from="#da7a49"
         to="#649591"
       />
       <Project
         link="https://www.flickr.com/photos/davidartshed/2860123919"
         domain="Wildwood Harley Davidson"
-        technologies="HTML, CSS, my Design created in PhotoShop"
+        technologies="HTML, CSS, PhotoShop"
         from="#a44b23"
         to="#49777e"
       />
       <Project
         link="https://www.elcoronado.com"
         domain="El Coronado Resort"
-        technologies="HTML, CSS, my Design created in PhotoShop"
+        technologies="HTML, CSS, PhotoShop"
         from="#405dab"
         to="#fedb01"
       />
       <Project
         link="https://www.crusaderresort.com/"
         domain="Crusade Rresort"
-        technologies="HTML, CSS, my Design created in PhotoShop"
+        technologies="HTML, CSS, PhotoShop"
         from="#699cd3"
         to="#f16c26"
       />
       <Project
         link="https://www.lotusinn.com/"
         domain="Lotus Inn"
-        technologies="HTML, CSS, my Design created in PhotoShop"
+        technologies="HTML, CSS, PhotoShop"
         from="#5fa4d8"
         to="#b17a50"
       />
       <Project
         link="https://www.heartofwildwood.com/"
         domain="Heart of Wildwood Motel"
-        technologies="HTML, CSS, my Design created in PhotoShop"
+        technologies="HTML, CSS, PhotoShop"
         from="#ef4c4b"
         to="#4181c3"
       />

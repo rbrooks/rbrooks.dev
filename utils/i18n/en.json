@@ -6,9 +6,9 @@
     "title": "Education",
     "milestones": [
       {
-        "title": "Self Taught",
-        "date": "Since 1977",
-        "text": "BASIC on TRS-80 & CP/M machines (NorthStar), Fortran & TurboPascal on MS-DOS PCs, on thru modern languages and F/OSS."
+        "title": "University of Autodidactica",
+        "date": "Since 1970",
+        "text": "School always got in the way of my education."
       },
       {
         "title": "Bronze Medal: New Jersey Institue of Technology (NJIT) Computer Olympics",
@@ -28,11 +28,11 @@
       {
         "name": "Trainual.com",
         "role": "Full Stack Web Developer",
-        "date": "Dec 2020 - May 2023, Scottsdale, AZ",
+        "date": "Since Dec 2020, Scottsdale, AZ",
         "tasks": [
           "Sr. Dev: Wrote a number of new features from the main application.",
           "Data Science Engineer: Rolled out dbt.",
-          "Data Science Engineer: Built all of the analytics infrastructure."
+          "Data Science Engineer: Built the analytics IaC."
         ]
       },
       {
@@ -41,7 +41,7 @@
         "date": "Dec 2017 - April 2020, Conshohoken, PA",
         "tasks": [
           "Added features to the main application and Kotlin microservices.",
-          "Wrote AWS Lambda: Python on Flask."
+          "Serverless: Wrote AWS Lambda in Python on Flask."
         ]
       },
       {
@@ -49,7 +49,7 @@
         "role": "Director of Software Engineering",
         "date": "2016 - 2017, Philadelphia, PA",
         "tasks": [
-          "$100,000,000 in revenue the year I was there."
+          "Surpassed $100,000,000 in revenue the year I was there."
         ]
       },
       {
@@ -59,7 +59,8 @@
         "tasks": [
           "Added lots of features to their Suite of Rails-based products.",
           "Recruiting: Assembled and trained the Dev Team.",
-          "Created TelVue Connect, their flagship SAAS product - TelVue's first modern stack."
+          "Created TelVue Connect, their flagship SAAS product - TelVue's first modern stack.",
+          "IaC: in Chef"
         ]
       },
       {
@@ -91,7 +92,7 @@
           "Assembled and trained team of 10 Desk Clerks and 2 Night Auditors annually. My direct reports.",
           "All the bookkeeping.",
           "Systems Administrator: Rolled out their first network (Win NT), website, etc.",
-          "Automation:. Replaced legacy manual processes with technology. Trrained dept in its ues.",
+          "Automation:. Replaced legacy manual processes with technology.",
           "Fixed a number process and service problems, cutting costs and raising guest sat."
         ]
       }
@@ -108,43 +109,49 @@
           "TypeScript",
           "Python",
           "VBS",
+          "Shell Script",
           "SQL",
           "C#",
-          "Learning Rust and Go"
+          "Trubo Pascal",
+          "Learning Rust & Go"
         ]
       },
       {
         "title": "Libraries and Frameworks",
         "skills": [
-          "Rails",
-          "Sinatra",
           "Deno",
-          "Fresh: This site is TypeScript on Deno on Fresh",
-          "Flask",
-          "Preact",
-          "React",
-          "Node.js",
           "Express",
-          "Nest"
+          "Fresh",
+          "Flask",
+          "Node.js",
+          "Nest",
+          "Preact",
+          "Rails",
+          "React",
+          "Sinatra"
         ]
       },
       {
         "title": "Further Knowledge",
         "skills": [
-          "Linux: Ubuntu, CentOS",
           "dbt",
-          "Docker",
-          "Kubernetes",
-          "GCP & AWS",
-          "Serverless: AWS Lambdas & GCP Cloud Functions",
-          "Segment.io",
-          "CI/CD: Semaphore, Tavis CI, Jenkins",
-          "DataDog / NewRelic",
-          "NewRelic",
-          "Git",
-          "HTML/SCSS/SASS",
-          "NoSQL: Redis",
-          "Background Job Servers: Resque, Siekiq"
+          "Docker, Kubernetes, GKE",
+          "DataDog, NewRelic",
+          "GCP, AWS",
+          "Git, GitHub Actions",
+          "HTML, SASS, Tailwind CSS",
+          "Linux, FreeBSD, MacOS",
+          "Lambdas & Cloud Functions",
+          "Segment.io, GA4",
+          "Semaphore, Tavis CI, Jenkins",
+          "Redis, MemCache",
+          "Resque, Sidekiq"
+        ]
+      },
+      {
+        "title": "Markup Languages",
+        "skills": [
+          "All of them"
         ]
       }
     ]

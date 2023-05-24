@@ -1,6 +1,6 @@
 import { Translation } from "../utils/types.ts";
 
-const Me = (data: { translation: Translation["me"] }) => (
+const Me = (data: { translation: Translation["me"] | "en" }) => (
   <div class="flex md:flex-col justify-between gap-10 md:gap-y-3 items-center md:items-start">
     <div class="md:order-2">
       <h1>Russ Brooks</h1>

@@ -1,11 +1,10 @@
+import Menu from "../components/menu.tsx";
+import MeAbout from "../components/me-about.tsx";
+
 const AboutMe = () => (
-  <div class="space-y-2">
-    <h1>About Me</h1>
-    <h2>Beatnick Jazzman</h2>
-    <p>
-      Lorem Ipsum
-    </p>
-    <h2>Heading 2</h2>
+  <div class="grid grid-cols-desktop gap-x-5 lg:grid-cols-1 gap-y-10 lg:gap-y-0">
+    <Menu lang="en" page="about" />
+    <MeAbout translation="en" />
   </div>
 );
 export default AboutMe;
