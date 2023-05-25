@@ -1,9 +1,7 @@
-import { Translation } from "../utils/types.ts";
-
-const Footer = (data: { translation: Translation["footer"] }) => (
+const Footer = () => (
   <div class="col-span-2 lg:col-span-1 flex gap-1 items-start mt-10 justify-between">
     <a href="/about">
-      {data.translation.about}
+      About Me
     </a>
     <div class="flex flex-col items-center gap-2">
       <a
@@ -43,7 +41,7 @@ const Footer = (data: { translation: Translation["footer"] }) => (
       </a>
     </div>
     <a href="/privacy">
-      {data.translation.privacy}
+      Privacy Policy
     </a>
   </div>
 );

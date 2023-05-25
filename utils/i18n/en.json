@@ -134,9 +134,9 @@
       {
         "title": "Further Knowledge",
         "skills": [
+          "DataDog, NewRelic",
           "dbt",
           "Docker, Kubernetes, GKE",
-          "DataDog, NewRelic",
           "GCP, AWS",
           "Git, GitHub Actions",
           "HTML, SASS, Tailwind CSS",

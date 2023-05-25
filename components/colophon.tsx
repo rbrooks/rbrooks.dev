@@ -91,9 +91,16 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
       <h4>Fresh</h4>
 
       <p>
-        <a href="https://fresh.deno.dev/">Fresh</a>{" "}
-        is an edge-first framework that delivers zero JavaScript to the client
-        by default with no build step. It’s optimized for speed.
+        <a href="https://fresh.deno.dev/">Fresh</a> is an{" "}
+        <a href="https://deno.com/blog/the-future-of-web-is-on-the-edge">
+          Edge-first
+        </a>{" "}
+        framework that delivers zero JavaScript to the client by default with no
+        build step. It’s optimized for speed. Your site will achieve a perfect
+        {" "}
+        <a href="https://deno.com/blog/ecommerce-with-perfect-lighthouse-score">
+          Lighthouse Score
+        </a>.
       </p>
 
       <ul>
