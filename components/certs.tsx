@@ -1,6 +1,6 @@
 import { Translation } from "../utils/types.ts";
 
-const Milestone = (props: { title: string; date: string; text?: string }) => (
+const Cert = (props: { title: string; date: string; text?: string }) => (
   <div>
     <div class="flex justify-between md:flex-col">
       <h4 class="md:order-2">{props.title}</h4>
@@ -10,15 +10,13 @@ const Milestone = (props: { title: string; date: string; text?: string }) => (
   </div>
 );
 
-const Education = (data: { translation: Translation["education"] }) => (
+const Certs = (data: { translation: Translation["education"] }) => (
   <>
     <h3>{data.translation.title}</h3>
     <div class="space-y-3 lg:space-y-2">
-      {data.translation.milestones.map((milestone) => (
-        <Milestone {...milestone} />
-      ))}
+      {data.translation.milestones.map((milestone) => <Cert {...milestone} />)}
     </div>
   </>
 );
 
-export default Education;
+export default Certs;

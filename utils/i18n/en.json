@@ -1,24 +1,19 @@
 {
   "me": {
-    "text": "Born on 7.15.1970 next door to Vernon Valley / Great Gorge ski resort, to a Ski-Instructor, Systems-Analyst father. Currently working at Trainual.com."
+    "text": "Born on 7.15.1970 next door to Vernon Valley / Great Gorge ski resort, to a Ski-Instructor, Systems-Analyst father. Currently working at Trainual.com. Latest fascinations: Skydiving. AI. Eliminating Transpiling from the planet. Fast technology that scales. Electric Guitar."
   },
   "education": {
     "title": "Education",
     "milestones": [
       {
+        "title": "Wildwood High School",
+        "date": "1988",
+        "text": "Honor Roll Jr and Sr Year."
+      },
+      {
         "title": "University of Autodidactica",
         "date": "Since 1970",
         "text": "School always got in the way of my education."
-      },
-      {
-        "title": "Bronze Medal: New Jersey Institue of Technology (NJIT) Computer Olympics",
-        "date": "1988: Sr Year in HS",
-        "text": "Turbo Pascal: Atomic Mass Converter"
-      },
-      {
-        "title": "Silver Medal: Stockton State College Science Fair",
-        "date": "1987: Jr Year in HS",
-        "text": "Turbo Pascal: Atomic Mass Converter"
       }
     ]
   },
@@ -112,7 +107,7 @@
           "Shell Script",
           "SQL",
           "C#",
-          "Trubo Pascal",
+          "Turbo Pascal",
           "Learning Rust & Go"
         ]
       },
@@ -147,17 +142,41 @@
           "Redis, MemCache",
           "Resque, Sidekiq"
         ]
-      },
-      {
-        "title": "Markup Languages",
-        "skills": [
-          "All of them"
-        ]
       }
     ]
   },
   "projects": {
     "title": "Projects"
+  },
+  "certs": {
+    "title": "Certs and Awards",
+    "milestones": [
+      {
+        "title": "MicroSoft Certified Professional (MCP): FrontPage",
+        "date": "2001",
+        "text": "MicroSoft"
+      },
+      {
+        "title": "MicroSoft Certified SharePoint Professional (MCSP)",
+        "date": "2004",
+        "text": "MicroSoft"
+      },
+      {
+        "title": "Adobe Certified Expert (ACE) PhotoShop",
+        "date": "2004",
+        "text": "Adobe Corporation"
+      },
+      {
+        "title": "Bronze Medal: New Jersey Institue of Technology (NJIT) Computer Olympics",
+        "date": "1988: Sr Year in HS",
+        "text": "Turbo Pascal: Atomic Mass Converter"
+      },
+      {
+        "title": "Silver Medal: Stockton State College Science Fair",
+        "date": "1987: Jr Year in HS",
+        "text": "Turbo Pascal: Atomic Mass Converter"
+      }
+    ]
   },
   "contact": {
     "title": "Contact",

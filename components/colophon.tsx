@@ -63,6 +63,11 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
         that at my last job, so this site is me doing that on a Personal level.
       </p>
 
+      <h5>
+        Transpiling was a Stopgap to get us to Modern Language features naitve
+        in the browser. That day arrvied 6 years ago.
+      </h5>
+
       <p>
         We were also burning unneccessary cost writing a lot of boilerplate,
         given MicroSoft failed to bundle a Std Lib with TypeScript.
