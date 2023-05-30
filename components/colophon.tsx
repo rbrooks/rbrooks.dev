@@ -88,8 +88,7 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
         </li>
         <li>
           <strong>TypeScript Standard Library</strong>{" "}
-          🤯 - They borrowed Go's very respedcted one. MicroSoft failed to
-          bundle one with TS.
+          🤯 - They borrowed Go's very respedcted one.
         </li>
       </ul>
 
