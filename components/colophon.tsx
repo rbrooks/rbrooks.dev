@@ -18,7 +18,7 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
       <h4>Deno</h4>
 
       <p>
-        <a href="https://deno.com/runtime">Deno</a>{" "}
+        <a href="https://deno.com/" title="Deno">Deno</a>{" "}
         is TypeScript runtime written by the Node-creator,{" "}
         <a href="https://en.wikipedia.org/wiki/Ryan_Dahl">Ryan Dahl</a>. He said
         it's what Node should have been out of the gate. Secure, Fast, Scales,
@@ -46,7 +46,7 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
 
       <p>
         Incredibly costly, and makes for an extremely poor DX (Developer
-        Experience). 😡 We rolled out Vite, and this defintiely helped, but
+        Experience). 😡 We rolled out Vite, and this helped significantly, but
         still, you've got this giant, ever-increasing bundle that must go out to
         the browser. Then we rewrote the app to be a SWJS (Single Window), but
         that doesn't reduce your bundle size.
@@ -59,12 +59,13 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
 
       <p>
         I Google "TypeScript runtime", and up comes "Deno". I immediately
-        created a Jira ticket for us to evaluate it. I never found time to do
-        that at my last job, so this site is me doing that on a Personal level.
+        created a Jira ticket fot us to evaluate it. I never found time to do
+        that at my last job, so this site ☝️ is me doing that on a Personal
+        level.
       </p>
 
       <h5>
-        Transpiling was a Stopgap to get us to Modern Language features naitve
+        Transpiling was a Stopgap to get us to Modern-Language features naitve
         in the browser. That day arrvied 6 years ago.
       </h5>
 
@@ -87,8 +88,10 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
           <strong>Secure by default.</strong> 🤯
         </li>
         <li>
-          <strong>TypeScript Standard Library</strong>{" "}
-          🤯 - They borrowed Go's very respedcted one.
+          <strong>
+            <a href="https://deno.land/std">TypeScript Standard Library</a>
+          </strong>{" "}
+          🤯 - They borrowed Go's very respected one.
         </li>
       </ul>
 
@@ -112,16 +115,24 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
           <strong>Fullstack Framework for Deno</strong> 🤯 Bundled with:
         </li>
         <li>
-          <strong>No JavaScript bundle to the client.</strong> 🤯
+          <strong>
+            <a href="https://tailwindcss.com/" title="Tailwind">Tailwind CSS</a>
+          </strong>{" "}
+          🤯
         </li>
         <li>
-          <strong>Tailwind CSS</strong> 🤯
+          <strong>
+            <a href="https://preactjs.com/" title="Preact">Preact</a>
+          </strong>{" "}
+          🤯 - Simplest thing that can work. 3kb
         </li>
         <li>
-          <strong>Preact</strong> 🤯 - Simplest thing that can work. 3kb
-        </li>
-        <li>
-          <strong>Stadard Lib</strong> 🤯
+          <strong>
+            <a href="https://deno.land/std">
+              TypeScript Standard Library
+            </a>
+          </strong>{" "}
+          🤯
         </li>
       </ul>
     </div>

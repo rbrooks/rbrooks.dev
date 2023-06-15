@@ -12,8 +12,8 @@
       },
       {
         "title": "University of Autodidactica",
-        "date": "Since 1970",
-        "text": "School always got in the way of my education."
+        "date": "Since 1988",
+        "text": "School always got in the way of my education. 😏"
       }
     ]
   },
@@ -137,10 +137,11 @@
           "HTML, SASS, Tailwind CSS",
           "Linux, FreeBSD, MacOS",
           "Lambdas & Cloud Functions",
+          "Redis, MemCache",
+          "Resque, Sidekiq",
           "Segment.io, GA4",
           "Semaphore, Tavis CI, Jenkins",
-          "Redis, MemCache",
-          "Resque, Sidekiq"
+          "Serverless"
         ]
       }
     ]
@@ -167,7 +168,7 @@
         "text": "Adobe Corporation"
       },
       {
-        "title": "Bronze Medal: New Jersey Institue of Technology (NJIT) Computer Olympics",
+        "title": "Bronze Medal: New Jersey Institute of Technology (NJIT) Computer Olympics",
         "date": "1988: Sr Year in HS",
         "text": "Turbo Pascal: Atomic Mass Converter"
       },
@@ -184,7 +185,7 @@
     "message": "Message",
     "send": "Send",
     "sent": "Message sent. Thank you! 📧",
-    "failed": "Something went wrong! 😱 Maybe email Russ."
+    "failed": "Something went wrong! 😱 Maybe email Russ at me@russbrooks.com."
   },
   "footer": {
     "about": "About Me",
