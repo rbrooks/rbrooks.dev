@@ -5,6 +5,17 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
     <div class="basis-3/5 pr-1.5">
       <h1>Colophon</h1>
       <h2>
+        Hosted Free At
+      </h2>
+      <ul>
+        <li>
+          <a href="https://deno.com/deploy">Deno Deploy</a>{" "}
+          - You even get global distribution to 35 nodes in the free one. No
+          latency for my High School buddy in Oz! 🤯
+        </li>
+      </ul>
+
+      <h2>
         Deno on Fresh
       </h2>
 
@@ -76,7 +87,13 @@ const ColophonContent = (data: { translation: Translation["me"] | "en" }) => (
 
       <ul>
         <li>
-          <strong>Ripping Fast</strong> 🤯 - Written in Rust. 🦀🚀
+          <strong>
+            Ripping{" "}
+            <a href="https://camo.githubusercontent.com/18d52fd52f722431a92bacc0dd93ebb09dab4b76b01fca32a18a437d385dffee/68747470733a2f2f717569636b63686172742e696f2f63686172742f72656e6465722f73662d63333434353037312d653765342d346661392d626561642d363531633466313533636564">
+              Fast
+            </a>
+          </strong>{" "}
+          🤯 - Written in Rust. 🦀🚀
         </li>
         <li>
           <strong>Transpiling is Dead.</strong> 🤯 - Let that sink in.
