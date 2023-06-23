@@ -27,13 +27,13 @@ const Index = (
     <div class="grid grid-cols-desktop gap-x-5 lg:grid-cols-1 gap-y-5 lg:gap-y-0">
       <Menu lang={data.lang} page="home" />
       <Me translation={data.translation.me} />
-      <Education translation={data.translation.education} />
       <Experience translation={data.translation.experience} />
       <Skills translation={data.translation.skills} />
       <Projects translation={data.translation.projects} />
       <Certs translation={data.translation.certs} />
+      <Education translation={data.translation.education} />
       <Contact translation={data.translation.contact} />
-      <Footer translation={data.translation.footer} />
+      <Footer />
     </div>
   );
 };
