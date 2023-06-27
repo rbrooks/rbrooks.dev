@@ -23,7 +23,7 @@
       {
         "name": "Trainual.com",
         "role": "Full Stack Web Developer & Data Engineer",
-        "date": "Since Dec 2020, Scottsdale, AZ",
+        "date": "Since Nov 2020, Scottsdale, AZ",
         "tasks": [
           "Sr. Dev: Wrote a number of new features from the main application.",
           "Data Science Engineer: Rolled out dbt.",
@@ -33,18 +33,10 @@
       {
         "name": "ShopRunner.com",
         "role": "Full Stack Web Developer",
-        "date": "Dec 2017 - April 2020, Conshohoken, PA",
+        "date": "2015 - 2020, Conshohoken, PA",
         "tasks": [
-          "Added features to the main application and Kotlin microservices.",
+          "Added features to the main application and Kotlin/Python microservices.",
           "Serverless: Wrote AWS Lambda in Python on Flask."
-        ]
-      },
-      {
-        "name": "RevZilla",
-        "role": "Director of Software Engineering",
-        "date": "2016 - 2017, Philadelphia, PA",
-        "tasks": [
-          "Surpassed $100,000,000 in revenue the year I was there."
         ]
       },
       {
