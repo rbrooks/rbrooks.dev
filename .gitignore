@@ -1,4 +1,5 @@
 .DS_Store
 .vscode
 .git
-
+# Ignore Fresh build directory
+_fresh/
