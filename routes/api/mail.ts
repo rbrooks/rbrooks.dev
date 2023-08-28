@@ -1,16 +1,20 @@
 import { Handlers, Status } from "$fresh/server.ts";
-import { SmtpClient } from "smtp";
+import { SmtpClient } from "https://deno.land/x/smtp/mod.ts";
+import "https://deno.land/x/dotenv/load.ts";
 
 export const handler: Handlers = {
   async POST(request: Request) {
     const client = new SmtpClient();
+    const { SMTP_HOST, SMTP_PORT, SMTP_UN, SMTP_PW } = Deno.env.toObject();
 
-    await client.connectTLS({
-      hostname: Deno.env.get("SMTP_HOST")!,
-      port: +Deno.env.get("SMTP_PORT")!,
-      username: Deno.env.get("SMTP_UN"),
-      password: Deno.env.get("SMTP_PW"),
-    });
+    const connectConfig: any = {
+      hostname: SMTP_HOST,
+      port: +SMTP_PORT,
+      username: SMTP_UN,
+      password: SMTP_PW,
+    };
+
+    await client.connectTLS(connectConfig);
 
     const payload: { mail: string; message: string } | undefined = await request
       .json();
@@ -21,8 +25,7 @@ export const handler: Handlers = {
           from: payload.mail,
           to: Deno.env.get("SMTP_TO")!,
           subject: `RussBrooks.com inquery from ${payload.mail}`,
-          content:
-            `${payload.message}\n\n---\nEmail them back at ${payload.mail}`
+          content: `${payload.message}\n\n---\nEmail them back at ${payload.mail}`
         });
         await client.close();
 
@@ -35,3 +38,23 @@ export const handler: Handlers = {
     }
   },
 };
+
+
+// const client = new SmtpClient();
+
+// const connectConfig: any = {
+//   hostname: "smtp.gmail.com",
+//   port: 465,
+//   username: "me@russbrooks.com",
+//   password: "5up3rCr055Trg3o",
+// };
+
+// await client.connectTLS(connectConfig);
+
+// await client.send({
+//   from: "me@russbrooks.com",
+//   to: "cbr1000@gmail.com",
+//   subject: "Welcome!",
+//   content: "Hi from Vuelancer!",
+// });
+
