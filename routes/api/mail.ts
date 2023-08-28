@@ -22,7 +22,8 @@ export const handler: Handlers = {
     if (payload) {
       try {
         await client.send({
-          from: payload.mail,
+          // from: payload.mail,
+          from: "me@russbrooks.com",
           to: SMTP_TO,
           subject: `RussBrooks.com inquery from ${payload.mail}`,
           content: `${payload.message}\n\n---\nEmail them back at ${payload.mail}`
