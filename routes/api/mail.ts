@@ -5,7 +5,7 @@ import "https://deno.land/x/dotenv/load.ts";
 export const handler: Handlers = {
   async POST(request: Request) {
     const client = new SmtpClient();
-    const { SMTP_HOST, SMTP_PORT, SMTP_UN, SMTP_PW } = Deno.env.toObject();
+    const { SMTP_HOST, SMTP_PORT, SMTP_UN, SMTP_PW, SMTP_TO } = Deno.env.toObject();
 
     const connectConfig: any = {
       hostname: SMTP_HOST,
@@ -23,7 +23,7 @@ export const handler: Handlers = {
       try {
         await client.send({
           from: payload.mail,
-          to: Deno.env.get("SMTP_TO")!,
+          to: SMTP_TO,
           subject: `RussBrooks.com inquery from ${payload.mail}`,
           content: `${payload.message}\n\n---\nEmail them back at ${payload.mail}`
         });
