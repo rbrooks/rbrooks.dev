@@ -22,8 +22,7 @@ export const handler: Handlers = {
           to: Deno.env.get("SMTP_TO")!,
           subject: `RussBrooks.com inquery from ${payload.mail}`,
           content:
-            `${payload.message}\n\n---\nEmail them back at ${payload.mail}
-          `,
+            `${payload.message}\n\n---\nEmail them back at ${payload.mail}`
         });
         await client.close();
 
