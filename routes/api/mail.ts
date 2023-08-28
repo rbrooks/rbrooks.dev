@@ -1,5 +1,5 @@
 import { Handlers, Status } from "$fresh/server.ts";
-import { SmtpClient } from "https://deno.land/x/smtp/mod.ts";
+import { SmtpClient, ConnectConfigWithAuthentication, SendConfig } from "https://deno.land/x/smtp/mod.ts";
 import "https://deno.land/x/dotenv/load.ts";
 
 export const handler: Handlers = {
@@ -7,7 +7,7 @@ export const handler: Handlers = {
     const client = new SmtpClient();
     const { SMTP_HOST, SMTP_PORT, SMTP_UN, SMTP_PW, SMTP_TO } = Deno.env.toObject();
 
-    const connectConfig: any = {
+    const connectConfig: ConnectConfigWithAuthentication = {
       hostname: SMTP_HOST,
       port: +SMTP_PORT,
       username: SMTP_UN,
@@ -20,14 +20,15 @@ export const handler: Handlers = {
       .json();
 
     if (payload) {
+      const sendConfig: SendConfig = {
+        from: "me@russbrooks.com",
+        to: SMTP_TO,
+        subject: `RussBrooks.com inquery from ${payload.mail}`,
+        content: `${payload.message}\n\n---\nEmail them back at ${payload.mail}`
+      };
+
       try {
-        await client.send({
-          // from: payload.mail,
-          from: "me@russbrooks.com",
-          to: SMTP_TO,
-          subject: `RussBrooks.com inquery from ${payload.mail}`,
-          content: `${payload.message}\n\n---\nEmail them back at ${payload.mail}`
-        });
+        await client.send(sendConfig);
         await client.close();
 
         return new Response("", { status: Status.OK });
