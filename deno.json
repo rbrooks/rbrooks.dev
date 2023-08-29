@@ -1,8 +1,8 @@
 {
   "tasks": {
-    "start": "deno run --allow-all --watch=static/,routes/ dev.ts ",
-    "build": "deno run --allow-all dev.ts build",
-    "preview": "deno run --allow-all main.ts"
+    "start": "deno run --allow-net --allow-read --allow-write --allow-env --watch=static/,routes/ dev.ts ",
+    "build": "deno run --allow-net --allow-read --allow-write --allow-env dev.ts build",
+    "preview": "deno run --allow-net --allow-read --allow-write --allow-env main.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
