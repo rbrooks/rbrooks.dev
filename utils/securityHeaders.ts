@@ -41,7 +41,7 @@ const SecurityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
   {
     key: "Permissions-Policy",
-    value: "camera=(), microphone=(), geolocation=(), net()",
+    value: "camera=(), microphone=(), geolocation=()",
   },
 ];
 
