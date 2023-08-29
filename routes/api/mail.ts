@@ -44,14 +44,14 @@ export const handler: Handlers = {
 
 // const client = new SmtpClient();
 
-// const connectConfig: any = {
-//   hostname: "smtp.gmail.com",
-//   port: 465,
-//   username: "me@russbrooks.com",
-//   password: "5up3rCr055Trg3o",
-// };
+// // const connectConfig: any = {
+// //   hostname: "smtp.gmail.com",
+// //   port: 465,
+// //   username: "me@russbrooks.com",
+// //   password: "5up3rCr055Trg3o",
+// // };
 
-// await client.connectTLS(connectConfig);
+// // await client.connectTLS(connectConfig);
 
 // await client.send({
 //   from: "me@russbrooks.com",
