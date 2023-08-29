@@ -21,7 +21,7 @@ export const handler: Handlers = {
 
     if (payload) {
       const sendConfig: SendConfig = {
-        from: "me@russbrooks.com",
+        from: payload.mail,
         to: SMTP_TO,
         subject: `RussBrooks.com inquery from ${payload.mail}`,
         content: `${payload.message}\n\n---\nEmail them back at ${payload.mail}`
