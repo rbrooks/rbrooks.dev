@@ -32,19 +32,10 @@ const Me = (data: { translation: Translation["me"] | "en" }) => (
         <li class="flex mt-0.5">
           <a
             class="group flex text-xs"
-            href="http://www.twitter.com/iq_9"
+            href="https://www.facebook.com/ducati1098"
           >
-            <img src="vectors/twitter.svg" width="24" />
-            <span class="ml-2">Twitter</span>
-          </a>
-        </li>
-        <li class="flex mt-0.5">
-          <a
-            class="group flex text-xs"
-            href="https://www.instagram.com/iq9/"
-          >
-            <img src="vectors/instagram.svg" width="24" />
-            <span class="ml-2 text-xs">Instagram</span>
+            <img src="vectors/fb.svg" width="24" />
+            <span class="ml-2">FaceBook</span>
           </a>
         </li>
         <li class="flex mt-0.5">
@@ -59,10 +50,37 @@ const Me = (data: { translation: Translation["me"] | "en" }) => (
         <li class="flex mt-0.5">
           <a
             class="group flex text-xs"
+            href="https://www.instagram.com/iq9/"
+          >
+            <img src="vectors/instagram.svg" width="24" />
+            <span class="ml-2 text-xs">Instagram</span>
+          </a>
+        </li>
+        <li class="flex mt-0.5">
+          <a
+            class="group flex text-xs"
             href="https://www.linkedin.com/in/russell-brooks-b46b4414/"
           >
             <img src="vectors/linkedin.svg" width="24" />
             <span class="ml-2 text-xs">LinkedIn</span>
+          </a>
+        </li>
+        <li class="flex mt-0.5">
+          <a
+            class="group flex text-xs"
+            href="http://www.twitter.com/iq_9"
+          >
+            <img src="vectors/twitter.svg" width="24" />
+            <span class="ml-2">Twitter</span>
+          </a>
+        </li>
+        <li class="flex mt-0.5">
+          <a
+            class="group flex text-xs"
+            href="https://www.youtube.com/@russbrooks1250/featured"
+          >
+            <img src="vectors/youtube.svg" width="24" />
+            <span class="ml-2">YouTube</span>
           </a>
         </li>
         <li class="mt-1 border-t border-zinc-100 pt-0.5 dark:border-zinc-700/40 flex">
