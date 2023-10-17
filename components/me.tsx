@@ -68,6 +68,15 @@ const Me = (data: { translation: Translation["me"] | "en" }) => (
         <li class="flex mt-0.5">
           <a
             class="group flex text-xs"
+            href="https://psnprofiles.com/iqnine"
+          >
+            <img src="vectors/ps.svg" width="24" />
+            <span class="ml-2">PlayStation</span>
+          </a>
+        </li>
+        <li class="flex mt-0.5">
+          <a
+            class="group flex text-xs"
             href="http://www.twitter.com/iq_9"
           >
             <img src="vectors/twitter.svg" width="24" />
